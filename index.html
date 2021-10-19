@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+    <meta name="author" content="Vincent Garreau"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="style/styleT.css" media="all">
+    <link rel="stylesheet" type="text/css" href="style/style.css" media="all">
+        <link rel="stylesheet" type="text/css" href="style/btn.css" media="all">
+    <title>TIME!!!</title>
+</head>
+<body>
+
+
+<div id="particles-js">
+    <div class="containers">
+        <div style="display: flex; justify-content: center; font-family: 'Festive', cursive; color: aqua;">
+            <p class="title">TIME!!!</p>
+        </div>
+    </div>
+    <div class="headers">
+        <div class="time">
+            <em class="clock"></em>
+            <div class="c-block c-block-3">
+                <div class="bl-inner"><span id="d">0</span></div>
+                <span class="etitle etitle-1">дней</span></div>
+            <div class="c-block c-block-2">
+                <div class="bl-inner"><span id="h">0</span></div>
+                <span class="etitle etitle-2">часов</span></div>
+            <div class="c-block c-block-2">
+                <div class="bl-inner"><span id="m">0</span></div>
+                <span class="etitle etitle-3">минут</span></div>
+            <div class="c-block c-block-2">
+                <div class="bl-inner"><span id="s">0</span></div>
+                <span class="etitle etitle-4">секунд</span></div>
+            <div>
+                <form>
+                    <label for="select">Moons: </label>
+                    <select style="font-size: 16px;" class="custom-select" id="select">
+                    <!-- <option value="0">Moons</option> -->
+                </select>
+                    <label for="selectData">Number: </label>
+                    <select style="font-size: 16px;" id="selectData">
+                </select>
+                    <label for="selectYear">Year: </label>
+                    <select style="font-size: 16px;" id="selectYear">
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                </select>
+                    <label>
+                        <input style="margin-left: 10px; font-size: 20px;"
+                               id="Input_time"
+                               type="time"
+                               placeholder="00"
+                               min="00:00"
+                               max="23:59"
+                               value="13:30">
+                    </label>
+                    <div class="btn-start-stop">
+                        <button id="btn" class="noselect" type="button">
+                            Start
+                        </button>
+                        <button id="stop" class="noselect" type="button">
+                            Stop
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<audio id="myAudio" src="audio/hickory_dickory_dock-notification.mp3"></audio>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="./particles.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>
