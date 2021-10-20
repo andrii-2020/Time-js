@@ -24,7 +24,30 @@ li{list-style:none}
 
 /* ---- base ---- */
 
-html,body{ 
+:root {
+  box-sizing: border-box;
+  font-size: calc(1vw + 0.6em);
+}
+@media only screen and (max-width: 480px){
+.time {
+  width: 320px;
+}
+  .c-block-1{width: 15px;}
+  .c-block-2{width: 30px;}
+  .c-block-3{width: 50px;}
+  .bl-inner{top: 4px;}
+#Input_time {
+  margin-top: 16px;
+}
+#selectYear {
+  margin-top: 16px;
+  height: 30px;
+}
+
+}
+
+html,body{
+    margin: 0;
 	width:100%;
 	height:100%;
 	background:#111;

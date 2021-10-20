@@ -21,12 +21,12 @@ select option{
 }
 
 .time{
-	/* display: block; */
+	display: block;
     margin: 0 auto;
     padding: 20px 0 50px;
     position: relative;
     text-align: center;
-    /*width: 49%;*/
+    width: 49%;
 }
 
 .time *{vertical-align: top;}
@@ -113,15 +113,19 @@ select option{
 }
 #d{
 	font-family: 'Dancing Script', cursive;
+	font-size: calc(1vw + 0.7em);
 }
 #h{
 	font-family: 'Dancing Script', cursive;
+	font-size: calc(1vw + 0.7em);
 }
 #m{
 	font-family: 'Dancing Script', cursive;
+	font-size: calc(1vw + 0.7em);
 }
 #s{
 	font-family: 'Dancing Script', cursive;
+	font-size: calc(1vw + 0.7em);
 }
 
 .c-block-1{width: 20px;}
